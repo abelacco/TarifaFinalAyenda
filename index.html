@@ -5,26 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TarifaFinal</title>
+    <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
-    <header></header>
-        <h1>
-        Tarifa final en SOLES y con IGV
+    <header>
+        <h1 id="h11">
+        Bienvenido a precios finales(SOLES y con IGV)
         </h1>
     </header>
     <section>
-        <h2>Ingresa las tarifas del PMS(AYENDA)</h2>
+        <h2 id="header2">Ingresa la tarifa del PMS(AYENDA)</h2>
         <form>
             <label for="hab1">Habitacion 1</label>
             <input id="hab1" type="number" />
-            <button type="button" onClick="convertirTarifa()">
+            <label for="noche">Noches</label>
+            <input id="noche" type="number" />
+            <button type="button" onclick="convertirTarifa()"> 
+                Precio Final
+            </button>
+            <p id= "ResultP"></p>                          
+        </form>
+        <form>
+            <label for="hab2">Habitacion 2</label>
+            <input id="hab2" type="number" />
+            <label for="noche2">Noches</label>
+            <input id="noche2" type="number" />
+            <button  type="button" onclick="convertirTarifa2()"> 
                 Precio Final
             </button>
             
-            <p id= "ResultP"></p>
-            <p id= "ResultP2"></p>            
+            <p id= "ResultP2"></p>
         </form>
+        
     </section>
+    <h1 id="firma"> Elaborado por abelacco</h1>
     <script src ="tarifa.js"></script>
 </body>
 </html>
